@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="jsd.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-delta">&Delta;</i>
+                    <div class="logo-text">JSD</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="jsd.html">Home</a></li>
+                        <li><a href="payment.html">Payment</a></li>
+                        <li><a href="">Contact</a></li>
+                        
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="images/jes.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm a <span class="input">Movie Enthusiast</span></h5>
+                    <h1>Jesald Tony</h1>
+                    <p class="description"> Welcome to my platform!
+                        Here, you’ll find essential details like my payment options and contact information. 
+                    <div class="btn-group">
+                       <a href="#" class="btn active">Payment</a>
+                       <a href="#" class="btn">Contact</a>
+                    </div>
+                 </div>
+            </div>
+                <!----copy this boy!-->
+            <div class="open">
+                <div class="opentech">
+                    <img src="images/openlog.png" alt="profile pic">
+                </div>
+                <div class="open-content">
+                    <h1>OpenTech</h1>
+                    <p> Welcome to OpenTech where we discuss about opensource apps, softwares and other services.
+                        Connect with us!
+                    </p>
+                    <p>
+                        <div class="btn-group">
+                            <a href="https://mastodon.social/@echo_xc" class="btn active">Mastodon</a>
+                         </div>
+                    </p>
+                    <p>
+                        <div class="signal">
+                            <a href="https://signal.group/#CjQKIO87H98yYO88wR7ZWAZNI_PGFqkzix0w8DKWUSWyEeWrEhD5fg8Z02DaM5lXGkQ7q5qf" i class="fa fa-message"></a>
+                        </div>
+                    </p>
+                 </div>
+            </div>
+            <!----copy this boy!-->
+            <div class="pay">
+                <div class="opentech">
+                    <img src="images/payme.png" alt="profile pic">
+                </div>
+                <div class="open-content">
+                    <h1>Payment</h1>
+                    <p> Looking for payment methods? Click the link below to take you to the payment section.
+                    </p>
+                    <p>
+                        <div class="btn-group">
+                            <a href="payment.html" class="btn active">Payment</a>
+                            
+                         </div>
+                    </p>
+                 </div>
+            </div>
+            <div class="connect">
+                <div class="opentech">
+                    <img src="images/connect2.png" alt="profile pic">
+                </div>
+                <div class="open-content">
+                    <h1>Lets Connect!</h1>
+                    <p> Do you wanna share some images with me. Jump into my socials and lets have some fun there!
+                    </p>
+                    <p>
+                        <div class="socials">
+                            <a href="https://www.linkedin.com/in/jesaldt
+
+                            "><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/jezald_/"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </p>
+                 </div>
+            </div>
+            <div class="copyright">
+                <p>
+                    &#169; JSD Ver 1.0
+                </p>
+            </div>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Movie Enthusiast","Canva editor","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+</html>
